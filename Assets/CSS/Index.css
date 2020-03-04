@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+img {
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+dl,
+ol,
+ul {
+    padding: 0;
+}
+
 
 /*--------Start hearder Section----------------*/
 
-#flask-brand {
+.navbar-brand {
     width: 20%;
     margin-left: 50px;
 }
 
 #navbarSupportedContent {
+    text-align: center;
+}
+
+#navbarDropdown {
     text-align: center;
 }
 
@@ -48,8 +64,7 @@ h1 {
 
 .container1 {
     /* border: 1px solid black; */
-    height: 85vh;
-    margin-bottom: 1rem;
+    padding-bottom: 4rem;
 }
 
 .whats-new {
@@ -81,28 +96,28 @@ h1 {
 .account {
     /* border: 1px solid blue; */
     margin: 2em;
-    height: 400px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .account-img {
     /* border: 2px solid red; */
-    width: 50%;
+    flex: 1 0 50%;
     height: 400px;
 }
 
 .account-img img {
     width: 100%;
     height: 100%;
+    border-radius: 4px;
 }
 
 .account-creation {
     /* border: 2px solid red; */
-    width: 50%;
-    height: 400px;
+    flex: 1 0 300px;
     padding: 10px;
+    text-align: center;
 }
 
 .account-creation h2 {
@@ -118,9 +133,8 @@ h1 {
 }
 
 #card-buttons-0 {
-    width: 40%;
     margin-top: 3em;
-    margin-left: 30%;
+    /* margin-left: 30%; */
 }
 
 
@@ -134,15 +148,15 @@ h1 {
     color: rgb(184, 68, 68);
     font-size: 2.5em;
     font-weight: 600;
-    height: 15vh;
-    margin-top: 0em;
+    padding-top: 1em;
     text-align: center;
 }
 
 .conteneur {
     /* border: 1px solid black; */
-    margin-left: 140px;
-    margin-right: 140px;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #services {
@@ -150,6 +164,10 @@ h1 {
     background-color: rgb(226, 225, 225);
     padding-bottom: 50px;
     margin-top: -2rem;
+}
+
+.container-fluid .row .col-lg-3 {
+    text-align: center;
 }
 
 .container-fluid img {
@@ -186,27 +204,45 @@ h1 {
 }
 
 #card-buttons-1 {
-    width: 60%;
+    /* width: 60%; */
     margin-top: 1rem;
-    margin-left: 20%;
 }
 
 #card-buttons-2 {
-    width: 60%;
+    /* width: 60%; */
     margin-top: 1rem;
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 
 #card-buttons-3 {
-    width: 65%;
+    /* width: 65%; */
     margin-top: 1rem;
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 
 #card-buttons-4 {
-    width: 60%;
+    /* width: 60%; */
     margin-top: 1rem;
-    margin-left: 20%;
+    /* margin-left: 20%; */
+}
+
+.container-fluid img {
+    height: 30vh;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+    .container-fluid .row .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .container-fluid img {
+        height: 30vh;
+    }
+    .img-container #track-bar {
+        left: 36%;
+    }
 }
 
 
@@ -238,11 +274,9 @@ h1 {
 
 #platform-update {
     /* border: 1px solid black; */
-    margin-top: 0rem;
-    height: 55vh;
+    margin: 0 0 1rem 0;
     width: 100%;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -259,12 +293,11 @@ h1 {
 .card-update {
     /* border: 1px solid red; */
     margin-top: .8rem;
-    width: 80%;
-    height: 200px;
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -288,9 +321,15 @@ h1 {
 
 .card-update-section {
     padding: 10px;
-    width: 30%;
+    flex: 1 0 25%;
     height: 100%;
-    text-align: justify;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-update-section {
+        flex: 1 0 20%;
+    }
 }
 
 #track-header {
@@ -304,9 +343,9 @@ h1 {
 .footer {
     /* border: 1px solid black; */
     width: 100%;
-    height: 300px;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: rgb(226, 225, 225);
@@ -336,8 +375,35 @@ h1 {
     color: black;
 }
 
+.footer .col-lg-3 {
+    flex: 1 0 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer .col-lg-3 {
+        flex: 1 0 35%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .footer .col-lg-3 {
+        flex: 1 0 50%;
+    }
+}
+
 
 /*-----------End of footer----------*/
 
 
 /* ------Start of Media Query---------- */
+
+
+/* @media only screen and (max-width:1024px){
+    container-fluid
+} */
+
+@media only screen and (min-width:991px) {
+    #nav1 {
+        position: relative;
+    }
+}
