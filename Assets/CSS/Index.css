@@ -23,6 +23,20 @@ ul {
     text-align: center;
 }
 
+
+/* Change color of dropdown links on hover */
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+#trackdrop:hover .dropdown-menu {
+    display: block;
+}
+
 #navbarDropdown {
     text-align: center;
 }
@@ -34,8 +48,8 @@ ul {
 }
 
 .img-container h1 {
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 500;
     color: #fff;
     height: 0vh;
 }
