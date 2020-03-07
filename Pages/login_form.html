@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="application-name" content="OpenStreetView">
+    <meta name="author" content="Noble Williams">
+    <meta name="description" content="Conception, ">
+    <meta name="keyword" content="Tracking, Shipping, ">
+    <meta http-equiv="refresh" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Track</title>
+
+    <!----Css sheet---->
+    <link rel="stylesheet" href="../Assets/CSS/login_page.css">
+    <link rel="stylesheet" href="../Assets/CSS/Index.css">
+    <link rel="stylesheet" href="../Assets/CSS/bootstrap-test.css">
+    <link rel="stylesheet" href="../Assets/CSS/fixed.css">
+    <link rel="stylesheet" href="../Assets/CSS/fontawesome.min.css">
+    <link rel="stylesheet" href="../Assets/CSS/animate.css">
+
+
+    <!-----Bootstrap---->
+    <link rel="stylesheet" href="../Assets/Bootstrap/flaticon.css">
+    <link rel="stylesheet" href="../Assets/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <!-------Start of Nav Bar-------->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">ITS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Services <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown" id="trackdrop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Track
+            </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Track your good delivery with Escrow system</a>
+                            <a class="dropdown-item" href="#">Track by Email</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">All tracking Services</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!--------------End of Nav Bar---------->
+
+    </header>
+
+    <!--form container-->
+    <div class="container">
+        <div class="jumbotron">
+
+            <!--form header-->
+            <form action="" autocomplete="on">
+                <fieldset>
+                    <legend>Login information</legend>
+                    <div class="userID">
+                        <label for="exampleFormControlInput1">Creat a user ID *</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password *</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Confirm password *</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" required>
+                        </div>
+                    </div>
+                </fieldset><br>
+
+
+                <!--secrete question-->
+                <fieldset>
+                    <legend>Your secret question</legend>
+                    <div class="select_secret_question">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Select secrete question *</label>
+                            <select class="form-control" id="exampleFormControlSelect1" required>
+                <option>Please select a secret question</option>
+                <option>What is your place of birth ?</option>
+                <option>What is your mother's first Name ?</option>
+                <option>What is your father's last name ?</option>
+                <option>What is the name of your childhood pet ?</option>
+                <option>What is the name of a school u attended ?</option>
+              </select>
+                        </div>
+                        <label for="secret_answer">Secret Answer</label>
+                        <input type="text" class="form-control" id="secret_answer">
+                    </div>
+                </fieldset><br>
+
+
+                <!--contact information-->
+                <fieldset>
+                    <legend>Contact information</legend>
+
+                    <div class="form-group">
+                        <label for="name">First Name *</label>
+                        <input type="text" class="form-control" id="name" required>
+
+                        <label for="last_name">Last Name *</label>
+                        <input type="text" class="form-control" id="last name" required>
+
+                        <p class="company_crudentials">
+                            Please do enter your company name (if applicable) and address to facilitate package pickup
+                        </p>
+
+                        <label for="company_name">Company name</label>
+                        <input type="text" class="form-control" id="company_name">
+
+
+                        <label for="secret_answer">Country / Teritory</label>
+                        <select class="form-control" id="exampleFormControlSelect1" required>
+              <option>Please select</option>
+              <option>Afganistan</option>
+              <option>Albania</option>
+              <option>Angola</option>
+              <option>Australia</option>
+              <option>Bahamas</option>
+              <option>Bangladesh</option>
+              <option>Belgium</option>
+              <option>Bolivia</option>
+              <option>Botswana</option>
+              <option>Brazil</option>
+              <option>Cambordia</option>
+              <option>Cameroon</option>
+              <option>Canada</option>
+              <option>Cape Vert</option>
+              <option>Chat</option>
+              <option>China</option>
+              <option>Colombia</option>
+              <option>Congo</option>
+              <option>Denmark</option>
+              <option>Dominica</option>
+              <option>Ecuador</option>
+              <option>Egypt</option>
+              <option>Ethopia</option>
+              <option>Forea Islands</option>
+              <option>Finland</option>
+              <option>Israel</option>
+              <option>Italy</option>
+              <option>Japan</option>
+              <option>Jordan</option>
+              <option>Kenya</option>
+              <option>Uganda</option>
+              <option>U.S.A</option>
+              <option>Russia</option>
+              <option>South Africa</option>
+              <option>South Korea</option>
+              <option>South Sudan</option>
+              <option>Swaziland</option>
+              <option>Zambia</option>
+              <option>Zimbabwe</option>
+            </select>
+
+                        <label for="zip_code">ZIP / Postal code</label>
+                        <input type="text" class="form-control" id="zip_code" required>
+
+                        <label for="address1">Address 1 *</label>
+                        <input type="text" class="form-control" id="address1" required>
+
+
+                        <label for="address2">Address 2 *</label>
+                        <input type="text" class="form-control" id="address2" required>
+
+                        <label for="city">City *</label>
+                        <input type="text" class="form-control" id="city" required>
+
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+
+                        <label for="re_enter_email">Re-enter e-mail</label>
+                        <input type="email" class="form-control" id="re_enter_email" placeholder="name@example.com" required>
+
+
+                    </div>
+
+                    <div class="phone_number1">
+                        <label for="phone_number">Phone *</label>
+                        <input type="tel" id="phone_number1">
+
+                        <label for="phone_number2">Fix </label>
+                        <input type="tel" id="phone_number2">
+                    </div>
+
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+
+                    <p class="terms_conditions"> I have read, understood and agree to be bound by the following. I also understand Flask intend to use my informations.</p>
+                    <ul>
+                        <li><a href="#">ITS.com Terms and conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </fieldset>
+
+                <button type="submit" class="btn btn-danger">I do not Accept</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <select class="custom-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
